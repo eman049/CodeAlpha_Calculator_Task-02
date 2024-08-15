@@ -1,0 +1,126 @@
+h2{
+    margin-bottom: 250px;
+    margin-left: 6%;
+    margin-right: 10%;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #32ddc6;
+    font-size: 45px;
+    animation: colorChange 4s infinite, shadowChange 4s infinite;
+}
+
+@keyframes colorChange {
+    3% { color: #9932dd; }
+    25% { color: #ff4500; }
+    50% { color: #1e90ff; }
+    75% { color: #32cd32; }
+    100% { color: #fcd422; }
+}
+
+@keyframes shadowChange {
+    3% { text-shadow: 2px 2px 5px #ca9aeb; }
+    25% { text-shadow: 2px 2px 5px #fc0463; }
+    50% { text-shadow: 2px 2px 5px #ff0505; }
+    75% { text-shadow: 2px 2px 5px #79ff20; }
+    100% { text-shadow: 2px 2px 5px #f7bf07; }
+}
+body {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://img.freepik.com/premium-photo/black-background-with-set-cubes_705708-7568.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    font-family: Arial, sans-serif;
+    
+}
+
+.calculator {
+    width: 340px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(90, 234, 245, 0.836);
+    border-radius: 8px;
+}
+
+.display {
+    background-color: #888282;
+    color: #fff;
+    padding: 30px;
+    text-align: right;
+    font-size: 3em;
+    border: 10px outset #000000;
+    border-radius: 6px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+    background: #242323b6;
+    padding: 20px;
+    border: 10px outset #080808;
+    border-radius: 6px;
+   
+}
+
+.btn {
+    padding: 15px;
+    background-color: #0e0d0dbb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition:  0.4s ease;
+    border-radius: 45%;
+    box-shadow: 0 0 18px rgba(90, 234, 245, 0.836);
+    
+}
+
+.btn:hover {
+    background-color: #0bf5af;
+
+}
+
+#clear {
+    grid-column: span 1;
+    background-color: #f44336;
+    color: #fff;
+
+}
+#clear:hover {
+    background-color: #ffa600;
+
+}
+#del {
+    grid-column: span 1;
+    background-color: #f44336;
+    color: #fff;
+
+}
+#del:hover {
+    background-color: #ffa600;
+
+}
+
+#equals {
+    grid-column: span 1;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+}
+#equals:hover {
+    background-color: #8ee682;
+
+}
+#add{
+    grid-row: span 2;
+    background-color: #ff9100;
+    border-radius: 5px;
+    color: #fff; 
+}
+#add:hover {
+    background-color: #ffd000;
+
+}
