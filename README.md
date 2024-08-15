@@ -7,7 +7,7 @@ This is a responsive and animated calculator web application built using HTML, C
 - **Delete Functionality**: Remove the last digit or character entered.
 - **Responsive Design**: Adapts to different screen sizes for optimal usability on desktops and mobile devices.
 - **Animations**: Smooth transitions and hover effects enhance the visual experience.
-- **Usable with both the mouse and keyboard.
+
 
 #### **Technologies Used:**
 - HTML5
